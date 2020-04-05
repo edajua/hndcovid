@@ -42,8 +42,150 @@ $(document).ready(function(){
             name : "honduras",
             zoom: {
                 enabled:true
-            }
-        }
+			},
+			defaultArea: {
+				attrs: {
+					stroke: "#fff",
+					"stroke-width": 1
+				},
+				attrsHover: {
+					"stroke-width": 2
+				}
+			}
+		},
+		legend: {
+			area: {
+				title: "Population of France by department",
+				exclusive: true,
+				slices: [
+					{
+						max: 300000,
+						attrs: {
+							fill: "#97e766"
+						},
+						label: "Less than de 300 000 inhabitants",
+						clicked: true
+					},
+					{
+						min: 300000,
+						max: 500000,
+						attrs: {
+							fill: "#7fd34d"
+						},
+						label: "Between 100 000 and 500 000 inhabitants"
+					},
+					{
+						min: 500000,
+						max: 1000000,
+						attrs: {
+							fill: "#5faa32"
+						},
+						label: "Between 500 000 and 1 000 000 inhabitants",
+						clicked: true
+					},
+					{
+						min: 1000000,
+						attrs: {
+							fill: "#3f7d1a"
+						},
+						label: "More than 1 million inhabitants",
+						clicked: true
+					}
+				]
+			}
+		},
+		areas: {
+			"HN-AT": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Atlantida</span><br />Population : 2617939"}
+			},
+			"HN-CH": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Choluteca</span><br />Population : 2617939"}
+			},
+			"HN-CL": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Colon</span><br />Population : 2617939"}
+			},
+			"HN-CM": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Comayagua</span><br />Population : 2617939"}
+			},
+			"HN-CP": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Copan</span><br />Population : 2617939"}
+			},
+			"HN-CR": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Cortes</span><br />Population : 2617939"}
+			},
+			"HN-EP": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">El paraiso</span><br />Population : 2617939"}
+			},
+			"HN-FM": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Francisco Morazan</span><br />Population : 2617939"}
+			},
+			"HN-GD": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Gracias a Dios</span><br />Population : 2617939"}
+			},
+			"HN-IN": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Intibuca</span><br />Population : 2617939"}
+			},
+			"HN-IB": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Islas de la Bahia</span><br />Population : 2617939"}
+			},
+			"HN-LP": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">La Paz</span><br />Population : 2617939"}
+			},
+			"HN-LE": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Lempira</span><br />Population : 2617939"}
+			},
+			"HN-OC": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Ocotepeque</span><br />Population : 2617939"}
+			},
+			"HN-OL": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Olancho</span><br />Population : 2617939"}
+			},
+			"HN-SB": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Santa Barbara</span><br />Population : 2617939"}
+			},
+			"HN-VA": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Valle</span><br />Population : 2617939"}
+			},
+			"HN-YO": {
+				value: "2617939",
+				href: "#",
+				tooltip: {content: "<span style=\"font-weight:bold;\">Yoeo</span><br />Population : 2617939"}
+			}
+		}
     });
 
     /**
